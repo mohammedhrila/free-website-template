@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css project</title>
+    <link rel="stylesheet" href="style/output.css">
+    <script>
+        function showNav() {
+            var m = document.getElementById("menu");
+            m.style.height == "0px" ? m.style.height = "auto" : m.style.height = "0px";
+        }
+    </script>
+</head>
+<body class=" bg-gradient-to-br from-head via-web to-web-dark text-slate-400">
+    <div class="cursor-pointer absolute top-6 right-10 w-16 h-7 bg-blue-600 text-center text-white rounded-xl z-10 hover:scale-110 hover:bg-blue-300 hover:text-black transition-all duration-100">Login</div>
+    <div class="cursor-pointer absolute top-6 right-28 w-16 h-7 text-center text-white rounded-xl border z-10 hover:scale-110 hover:bg-blue-300 hover:text-black transition-all duration-100">Signup</div>
+    <!---------------navbar start------------------->
+    <div class="grid-rows-3 h-9 w-10 p-1 ml-10 mt-10 cursor-pointer hover:bg-gray-700 block md:hidden" onclick="showNav()">
+        <div class="h-1 bg-white my-1"></div>
+        <div class="h-1 bg-white my-1"></div>
+        <div class="h-1 bg-white my-1"></div>
+    </div>
+    <nav class="w-full h-18 overflow-hidden p-3 md:block">
+        <img src="img/Logo-4.png" alt="LOGO" class="w-8 float-left mx-5 mt-1 hidden md:block animate-pulse">
+        <ul id="menu" class="flex flex-col md:block text-center md:text-left mx-5 md:mx-0 bg-blue-950 md:bg-inherit rounded-md h-0 md:h-auto">
+            <li class="inline-block nav-li"><a href="#" class="nav-link">Home</a></li>
+            <li class="inline-block nav-li"><a href="#" class="nav-link">New</a></li>
+            <li class="inline-block nav-li"><a href="#" class="nav-link">News</a></li>
+            <li class="inline-block nav-li"><a href="#" class="nav-link">Team</a></li>
+            <li class="inline-block nav-li"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------navbar end-------------------->
+
+    <!-------------------header start------------------->
+
+    <header class="h-screen w-full grid grid-cols-1 md:grid-cols-2 p-10 font-mono">
+        <div class="">
+            <h1 class="text-white text-4xl animate-bounce">M_Technology</h1>
+            <p class="py-5 text-xl">Designed by Mirwais Ahmadi</p>
+            <p class="text-md">you can see best News about technology.</p>
+        </div>
+        <div>
+            <img src="img/imac-1999636_1920.png" alt="" class="align-middle">
+        </div>
+    </header>
+
+    <!-------------------header end------------------->
+
+    <!-------------------main start------------------->
+    
+    <main class="w-full min-h-screen p-10">
+        <span class="text-white text-xl ">Matrix Technology</span><br><br>
+        <div class="card-container">
+            <div class="card">
+                <img class="w-full hover:scale-110 hover:rounded-lg transition duration-200" src="img/digitization-5140072_1280.png" alt="">
+                <p class="p-3 text-white">Binary world</p>
+            </div>
+            <div class="card">
+                <img class="w-full hover:scale-110 hover:rounded-lg transition duration-200" src="img/workspace-2443050_1280.png" alt="">
+                <p class="p-3 text-white">Computer</p>
+            </div>
+            <div class="card">
+                <img class="w-full hover:scale-110 hover:rounded-lg transition duration-200" src="img/manhattan-3866140_1280.png" alt="">
+                <p class="p-3 text-white">Apple Company</p>
+            </div>
+            <div class="card">
+                <img class="w-full hover:scale-110 hover:rounded-lg transition duration-200" src="img/istockphoto-1201166649-170667a.png" alt="">
+                <p class="p-3 text-white">Web designing</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 my-20 gap-10 font-mono text-white">
+            <div class="pt-4">
+                <span class="text-2xl font-bold">Work with tools you already use</span><br><br>
+                <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p><br>
+                <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
+            </div>
+            <div class="">
+                <img src="img/feature-1.png" alt="">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 my-20 gap-10 font-mono text-white">
+            <div class="">
+                <img src="img/feature-2.png" alt="">
+            </div>
+            <div class="pt-8">
+                <span class="text-2xl font-bold">We invest in the world’s potential</span><br><br>
+                <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.
+                </p><br>
+                <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-------------------main end------------------->
+    
+    <!-------------------footer start---------------->
+    <footer>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 p-10 bg-gradient-to-bl from-web-dark to-web">
+            <div>
+                <h1 class="font-bold">Conpany</h1><br>
+                <ul>
+                    <li class="mb-3"><a href="" class="hover:underline">About</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Blog</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Brand Center</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold">help center</h1><br>
+                <ul>
+                    <li class="mb-3"><a href="" class="hover:underline">Twitter</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Facebook</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Whatsapp</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold">Legal</h1><br>
+                <ul>
+                    <li class="mb-3"><a href="" class="hover:underline">Privacy Policy</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Licensing</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Terms</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold">Download</h1><br>
+                <ul>
+                    <li class="mb-3"><a href="" class="hover:underline">ios</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Android</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">Windows</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">MacOS</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-bold">Conpany</h1><br>
+                <ul>
+                    <li class="mb-3"><a href="" class="hover:underline">about</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">blog</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">brand center</a></li>
+                    <li class="mb-3"><a href="" class="hover:underline">about</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="col-span-5 text-center p-10">
+            <hr><br>
+            <span>All reserved by Mirwais Ahmadi &copy; 2023</span>
+            
+        </div>
+    </footer>
+    <!-------------------footer end------------------>
+   
+</body>
+</html>
